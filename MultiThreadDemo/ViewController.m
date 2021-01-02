@@ -295,10 +295,7 @@ static NSInteger total = 100;
     NSString* imageStr = @"https://youimg1.c-ctrip.com/target/fd/tg/g2/M05/63/4D/CghzgFTz8_WAHjQTABB6rt-2dKw788.jpg";
     NSData* imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:imageStr]];
     UIImage* image = [UIImage imageWithData:imageData];
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        <#code to be executed once#>
-    });
+
     //update on main thread
 //    [self performSelectorOnMainThread:@selector(updateImage:) withObject:image waitUntilDone:NO];
     
